@@ -10,7 +10,7 @@ Expense Tracker is a Java application that allows you to track and manage your e
 
 ## Prerequisites
 
-- Java 8 or later
+- Java 17 or later
 - Maven
 
 ## Getting Started
@@ -34,15 +34,3 @@ cd ExpenseTracker
 java -jar target/ExpenseTracker-1.0-jar-with-dependencies.jar
 ```
 
-## Configuring Java Version
-
-The Java version used for the project is specified in the `pom.xml` file. If you want to use a different Java version, you can change it in the following properties:
-
-```xml
-<properties>
-    <maven.compiler.source>19</maven.compiler.source>
-    <maven.compiler.target>19</maven.compiler.target>
-</properties>
-```
-
-Replace `19` with your desired Java version (e.g., 17 for Java 17).
