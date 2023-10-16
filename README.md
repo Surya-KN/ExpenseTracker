@@ -10,7 +10,7 @@ Expense Tracker is a Java application that allows you to track and manage your e
 
 ## Prerequisites
 
-- Java 17 or later
+- Java 17 or later (Make sure both `JAVA_HOME` and `Path` variables are set. )
 - Maven
 
 ## Getting Started
