@@ -26,9 +26,14 @@ git clone https://github.com/Surya-KN/ExpenseTracker.git
 cd ExpenseTracker
 ```
 3. Build the project:
-```
-./mvnw.cmd clean package
-```
+- for windows
+  ```
+  .\mvnw.cmd clean package
+  ```
+- for linux
+  ```
+  ./mvnw clean package
+  ```
 4. Run the application:
 ```
 java -jar target/ExpenseTracker-1.0-jar-with-dependencies.jar
