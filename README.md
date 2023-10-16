@@ -32,6 +32,7 @@ cd ExpenseTracker
   ```
 - for linux
   ```
+   chmod +x ./mvnw
   ./mvnw clean package
   ```
 4. Run the application:
