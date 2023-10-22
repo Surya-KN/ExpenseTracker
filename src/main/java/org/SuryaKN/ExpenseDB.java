@@ -6,7 +6,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 
 public class ExpenseDB {
-    static Statement stat;
+    static final Statement stat;
 
     static {
         try {
