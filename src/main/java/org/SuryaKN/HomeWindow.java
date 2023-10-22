@@ -12,7 +12,7 @@ public class HomeWindow extends JFrame {
     private static final JLabel label = new JLabel();
 
     public HomeWindow() throws SQLException {
-        setTitle("Temperature Converter");
+        setTitle("Expense Tracker");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setSize(1000, 600);
         setLocationRelativeTo(null);
@@ -52,11 +52,7 @@ public class HomeWindow extends JFrame {
         newButton.addActionListener(new MyActionListener());
 
         JComboBox<String> categoriesBox;
-        try {
-            categoriesBox = createSortPanel();
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
+        categoriesBox = createSortPanel();
 
         JButton calculateButton = new JButton("Summary");
         calculateButton.addActionListener(new MyActionListener());
@@ -78,7 +74,7 @@ public class HomeWindow extends JFrame {
         return selectionPanel;
     }
 
-    private JComboBox<String> createSortPanel() throws SQLException {
+    private JComboBox<String> createSortPanel() {
 //        JPanel sortPanel = new JPane
 
         String[] categoryList = ExpenseDB.getCategories();
